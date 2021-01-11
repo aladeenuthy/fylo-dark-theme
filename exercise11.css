@@ -1,0 +1,378 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)
+
+### Accent
+
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+- Light Red (error): hsl(0, 100%, 63%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 14px
+
+### Headings, Call-to-actions, Header Navigation
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+*/
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+}
+body{
+ color: #cccccc;
+ line-height: 1.6;
+ background-color:hsl(217, 28%, 15%);
+ font-family: 'Open Sans', sans-serif;
+}
+h1{
+ font-family: 'Raleway', sans-serif;
+ font-weight: 700;
+ font-size: 27px;
+}
+img {
+ max-width: 100%;
+}
+header{
+ margin-top: 60px;
+}
+ header.same img{
+ height: 45px;
+}
+ .same{
+ width: 91%;
+ margin: 0 auto;
+}
+ .header-content, header .same div:last-of-type{
+ display: flex;
+ justify-content: space-between;
+}
+ header .same div:last-of-type{
+ flex-basis: 20%;
+}
+
+main section:first-of-type{
+ background-image: url("bg-curvy-desktop.svg");
+ background-size: 1344px 47%;
+ background-position: top center;
+ background-repeat: no-repeat;
+}
+.image, .top{
+ width: 33%;
+ margin: 0 auto;
+ text-align: center;
+}
+.top h1{
+ margin: 20px 0px 20px 0px;
+}
+button{
+ padding: 13px 0;
+ width: 225px;
+ border: none;
+ border-radius: 33px;
+ color: #fff;
+ background-color: hsl(198, 71%, 55%);
+ margin-top: 30px;
+}
+main section:first-of-type .center{
+ margin-top: 120px;
+ background-color: hsl(218, 28%, 13%);
+ text-align: center;
+}
+.center-content img{
+ height: 75px;
+}
+.center-content p{
+ width: 80%;
+ margin: 0 auto;
+}
+.center-content{
+ width: 70%;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ column-gap: 30px;
+ row-gap: 35px;
+}
+main section:last-of-type{
+ padding-top: 60px;
+ background-color: hsl(218, 28%, 13%);
+ font-size: 18px;
+}
+main section:last-of-type .same{
+display: flex;
+justify-content: space-between;
+
+}
+section:last-of-type .same > div{
+ flex-basis: 49%;
+}
+section:last-of-type .same > div:last-of-type{
+ margin-top: 9%;
+}
+section:last-of-type .same > div:last-of-type h1{
+ width: 49%;
+}
+.arrow {
+ display: flex;
+ color:  hsl(198, 48%, 51%);
+ border-bottom:  hsl(198, 71%, 55%)2px solid;
+ width: 180px;
+}
+.arrow img{
+ margin-top: 4px;
+ height: 21px;
+ margin-left: 3px;
+}
+.cards-container{
+width: 87%;
+ display: flex;
+ margin: 0 auto;
+ justify-content: space-between;
+ 
+}
+.cards{
+ background-color: hsl(219, 30%, 18%);
+ padding: 40px 27px 35px 20px;
+ line-height: 1.3;
+ flex-basis: 30%;
+ font-size: 16px;
+ box-shadow: 3px 3px 7px hsl(219, 30%, 18%);
+z-index: 20;
+margin-bottom: 50px;
+}
+.profile{
+ margin-top: 20px;
+ font-size: 15px;
+}
+.comma{
+ position: relative;
+ top: 20px;
+ width: 89%;
+ margin: 0 auto;
+ margin-top: 50px;
+}
+.cards h4{
+ color: #fff;
+}
+.profile p{
+ font-size: 14px;
+ color: #a8a1a1;
+}
+.cards img{
+ height: 35px;
+ border-radius: 50%;
+ float: left;
+ margin-right: 6px;
+}
+.offset{
+ margin-top: 100px;
+box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+ max-width: 860px;
+ margin: 0 auto;
+ text-align: center;
+ padding: 45px 70px;
+ line-height: 1.4;
+ background: #1c2431;
+ border-radius: 7px;
+ position: relative;
+ top: 120px;
+}
+
+form{
+ display: flex;
+ margin-top: 20px;
+}
+form button{
+ margin: 0;
+ margin-left: 20px;
+ flex-shrink: 0;
+}
+input{
+ flex-basis: 70%;
+ border: none;
+ border-radius: 55px;
+ padding: 10px 30px 10px 30px;
+}
+footer{
+ padding: 100px 80px;
+ font-size: 15px;
+ background-color: #0b1523;
+}
+.footer-content{
+ margin-top: 100px;
+}
+.inner-content, .left, .email-phone div, .left div:first-of-type, .center{
+display: flex;
+}
+.inner-content{
+ justify-content: space-between;
+ margin-top: 22px;
+}
+.left img{
+ height: 20px;
+ margin-right: 10px;
+}
+.left{
+ flex-basis: 55%;
+}
+.left div{
+ flex-basis: 40%;
+}
+.left > div:first-of-type{
+ flex-basis:55%;
+ margin-right: 31px;
+}
+.email-phone div{
+ margin-bottom: 15px;
+}
+.center{
+ flex-wrap: wrap;
+ flex-basis: 30%;
+}
+.center p{
+ flex-basis: 40% ;
+ margin-bottom: 15px;
+}
+.icons img{
+ margin-right: 5px;
+}
+@media screen and (max-width:600px){
+
+ header{
+  margin-top: 35px;
+ }
+ header img{
+  height: 35px;
+ }
+ header .same div:last-of-type{
+  flex-basis: 50%;
+ }
+ .same, .image{
+  width: 90%;
+ }
+ .top{
+  width: 100%;
+
+ }
+
+ .top h1, .top p{
+   width: 80%;
+   margin: 0 auto;
+ }
+  .top h1{
+   margin-top: 50px;
+   margin-bottom: 25px;
+ }
+ .image{
+  margin-top: 50px;
+ }
+main section:first-of-type .center{
+  margin-top: 90px;
+  
+}
+.center-content{
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.top button{
+  margin-top: 30px;
+  width: 70%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main section:last-of-type .same{
+  width: 94%;
+  flex-direction: column;
+  font-size: 18px;
+}
+section:last-of-type .same > div:last-of-type h1{
+  width: 100%;
+}
+section:last-of-type .same > div:last-of-type >p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.arrow {
+  width: 165px;
+  font-size: 15px;
+}
+.cards-container{
+  flex-direction: column;
+  margin-top: 50px;
+}
+.comma{
+  top: 70px;
+}
+.offset{
+  width: 90%;
+  padding: 45px 40px;
+  line-height: 1.5;
+  font-size: 17px
+}
+form{
+flex-direction: column;
+}
+input{
+  width: 100%;
+}
+.offset button{
+  margin-top: 23px;
+  margin-left: 0;
+  width: 100%;
+  padding: 15px ;
+}
+footer{
+  padding-right: 10px;
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+.inner-content,.left,footer .center{
+  flex-direction: column;
+}
+.left > div{
+  margin-bottom: 25px;
+}
+.icons{
+ text-align: center;
+}
+
+}
